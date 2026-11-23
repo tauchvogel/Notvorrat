@@ -388,7 +388,7 @@ window.NV_DATA = {
 // ---------- Angaben zum Anbieter (vor einem Verkauf ausfüllen!) ----------
 // Impressumspflicht (§ 5 DDG): Name, ladungsfähige Anschrift, E-Mail; ggf. Telefon, USt-IdNr.
 window.NV_DATA.legal = {
-  version: '2.2',
+  version: '2.5',
   contentDate: 'November 2026',
   provider: { name: '', address: '', email: '', phone: '', vatId: '' },
   hoster: 'dem jeweiligen Hosting-Anbieter (z. B. Netlify, Cloudflare oder GitHub)'

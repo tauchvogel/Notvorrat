@@ -30,3 +30,33 @@ NOTVORRAT – Offline-App (PWA)
    - Daten liegen nur auf dem Gerät (kein Server, kein Konto).
    - Mehrere Handys: Sicherung exportieren und auf dem anderen importieren.
    - Nach Änderungen an Dateien in sw.js die Version (CACHE = 'notvorrat-v2') erhöhen.
+
+6) GITHUB PAGES (kostenlos, ohne Netlify-Abzeichen)
+   1. Konto anlegen auf github.com, dann "New repository": Name z. B. "notvorrat", "Public" wählen (kostenloses Pages geht nur mit öffentlichem Repository), "Create repository".
+   2. Im neuen Repository: "uploading an existing file". Den INHALT des entpackten Ordners (index.html, app.js, ... und die Ordner lib und icons) in das Fenster ziehen (am PC). Unten "Commit changes".
+   3. Settings -> Pages -> "Deploy from a branch" -> Branch "main", Ordner "/ (root)" -> Save.
+   4. Nach ca. 1 Minute steht oben die Adresse: https://DEIN-NAME.github.io/notvorrat/
+   5. Auf dem Handy öffnen und installieren wie in Punkt 2. Neue Adresse = leerer Speicher: Daten vorher als JSON sichern und importieren.
+   Aktualisieren: Dateien im Repository erneut hochladen (überschreibt), dann in der App "Auf Update prüfen / neu laden".
+   Hinweis: Öffentliches Repository = Quellcode für alle sichtbar.
+
+7) MHD-ERINNERUNGEN
+   Lager: oben erscheint eine Warnleiste (abgelaufen / in den nächsten 30 Tagen).
+   Mehr -> Daten: "Benachrichtigungen aktivieren" (Meldung beim Öffnen der App, auf Android evtl. auch im Hintergrund) und
+   "Kalender-Datei (.ics)": im Handy-Kalender öffnen, dann erinnert der Kalender zuverlässig.
+
+8) NEU IN VERSION 2.4
+   Schnellscan: Scan-Tab -> oben "− Entnehmen" oder "+ Einlagern" wählen, Kamera starten. Jeder Code zieht 1 Stück ab bzw.
+   legt 1 Stück ein, die Kamera bleibt an (Ton/Vibration, Protokoll, "Letzte Aktion rückgängig"). Ein Code im Bild zählt nur einmal;
+   erst wenn er das Bild verlassen hat, zählt er erneut.
+   Chargen: Artikel öffnen -> "Mehrere MHD (Chargen)": je Charge Anzahl und MHD. Entnahmen nehmen die älteste Charge zuerst.
+   Warnungen und Kalender-Erinnerungen arbeiten pro Charge.
+   Notfall-Karte: Mehr -> Notfall-Karte. Adresse, Personen, Medikamente, Kontakte, Treffpunkte eintragen, dann drucken oder als Bild speichern.
+   Die Angaben stehen auch in der JSON-Sicherung, bitte sicher aufbewahren.
+
+9. NEU in 2.5: Planer (Mehr -> Planer)
+- "Reicht der Vorrat?": Tage nach Energie (kcal-Schätzung) und Wasser; begrenzender Faktor; Wert "mit Einkaufsliste".
+- Wasser-Rechner: Trinken/Kochen, Hygiene, Brauchwasser; fehlende Liter als Kanister/Flaschen.
+- Kochrechner: Brennstoffbedarf (Gas 230/450 g, Spiritus) mit Wirkungsgrad und Reserve. Vorhandene Artikel mit "Kartusche"/"Spiritus" im Namen werden gezählt.
+- Alle Werte sind Schätzungen. Eigene kcal je 100 g im Artikel eintragen.
+- Update: Ordner neu hochladen, Mehr -> Über -> "Auf Update prüfen / neu laden", Version muss 2.5 zeigen.
