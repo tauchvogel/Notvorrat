@@ -172,3 +172,26 @@ pre.lic{white-space:pre-wrap;word-break:break-word;font-size:.72rem;max-height:5
 .lblbar{position:sticky;top:46px;z-index:4;display:flex;align-items:center;justify-content:space-between;gap:10px;background:var(--bg);padding:8px 0;border-bottom:1px solid var(--line)}
 .lblbar button{flex:none}
 .lrow input{pointer-events:none}
+
+.warnbar{display:block;width:100%;text-align:left;margin:0 0 10px;padding:12px 14px;border:1px solid var(--soon);background:transparent;color:var(--soon);border-radius:var(--radius);font-weight:600;font-size:.92rem}
+.warnbar.exp{border-color:var(--exp);color:var(--exp)}
+.warnbar[hidden]{display:none}
+
+/* ---------- v2.4: Schnellscan, Chargen, Notfall-Karte ---------- */
+.seg{display:flex;gap:6px;margin:0 0 8px}
+.seg button{flex:1;font-size:.9rem;padding:8px 6px}
+.seg button.active{background:var(--brand);color:var(--brand-text);border-color:var(--brand);font-weight:600}
+#scanMsg.ok{color:var(--ok);font-weight:600}
+#scanMsg.bad{color:var(--exp);font-weight:600}
+.qlog{list-style:none;margin:0;padding:0;font-size:.9rem}
+.qlog li{padding:6px 0;border-top:1px solid var(--line)}
+.qlog li span{color:var(--muted);font-size:.78rem;margin-right:6px}
+.qlog li.bad{color:var(--exp)}
+.lotbox{margin:10px 0}
+.lot{display:flex;gap:8px;margin:6px 0}
+.lot input[type=number]{width:34%;flex:none}
+.lot input[type=date]{flex:1;min-width:0}
+.lot button{flex:none;min-width:44px;padding:0}
+.pad{padding:0 14px 12px}
+#cardForm label{margin-top:8px}
+#cardForm>button,#cardForm .pad>button{margin:10px 0}
